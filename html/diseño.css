@@ -1,0 +1,95 @@
+body {
+    font-family: monospace;
+    margin: 20px;
+    background: url(https://media.istockphoto.com/id/1405308247/es/vector/juego-de-garabatos-dibujados-a-mano-de-videojuegos-consola-de-videojuegos-joystick-elemento.jpg?s=612x612&w=0&k=20&c=ud2PESJdIgxTrcryPjEvmchoziXM15IaxWBk9HQ6M80=)no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: #000000;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+header1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #141414;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#proyectos {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#bienvenida {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0); /* negro casi sólido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* blanco puro */
+    font-size: 2.5em;
+    font-weight: bold;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 2s ease;
+    padding: 20px;
+}
+
+/* Opcional: efecto brillante en el texto */
+#bienvenida h1 {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+
